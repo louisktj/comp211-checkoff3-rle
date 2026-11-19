@@ -54,8 +54,4 @@ Windows bitmap formats include RLE modes for 8-bit and 4-bit indexed images. Mic
 - `rle_demo.c`: complete example and built-in checks.
 - `docs/results.txt`: captured output from the program.
 - `docs/resources.md`: references and what they support.
-- `presentation/`: Google Slides draft, PDF snapshot, rehearsal script, and editable Markdown outline.
-
-## Preparation status
-
-These are AI-assisted preparation materials. Review the code, run the examples yourself, and use your own explanation and slide organization. The assignment requires student-created slides. This repository does not claim that the student has completed the personal reflection, recorded the presentation, or submitted the checkoff.
+- `presentation/RLE-preparation-draft.pdf`: draft presentation slides. Replace this file with the final slides before submission.

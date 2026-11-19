@@ -1,6 +1,3 @@
-/* A small educational RLE format: [count byte][value byte].
- * Each count is 1..255. This is not a BMP file encoder.
- * AI-assisted example for COMP 211. */
 #include <assert.h>
 #include <limits.h>
 #include <stdio.h>
@@ -9,7 +6,6 @@
 _Static_assert(CHAR_BIT == 8, "This example uses 8-bit bytes");
 #define MAX_INPUT 1024
 
-/* Caller provides room for 2 * n bytes. Empty input produces no pairs. */
 static size_t encode(const unsigned char *input, size_t n,
                      unsigned char *output) {
     size_t i = 0, used = 0;
@@ -26,7 +22,6 @@ static size_t encode(const unsigned char *input, size_t n,
     return used;
 }
 
-/* Return 1 on success, 0 for invalid pairs or insufficient output room. */
 static int decode(const unsigned char *input, size_t n,
                   unsigned char *output, size_t capacity, size_t *used) {
     *used = 0;
